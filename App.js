@@ -5,6 +5,7 @@ import {
   ScrollView,
   View,
   BackHandler,
+  Image,
 } from "react-native";
 import { Text, ListItem } from "react-native-elements";
 import Constants from "expo-constants";
@@ -41,8 +42,9 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
+      <Image source={require('./assets/icon.png')} style={styles.icon} />
       <Text h4 style={styles.heading}>
-        Aethereus Login Page
+        Aethereus
       </Text>
 
       <ScrollView>
@@ -71,5 +73,13 @@ const styles = StyleSheet.create({
   },
   title: {
     fontWeight: "bold",
+  },
+  icon: {
+    position: 'absolute',
+    top: 50,
+    left: 50,
+    zIndex: 999,
+    width: 50,
+    height: 50,
   },
 });
