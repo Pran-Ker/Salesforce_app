@@ -8,19 +8,19 @@ import {
 } from "react-native";
 import { Text, ListItem } from "react-native-elements";
 import Constants from "expo-constants";
-import { EXAMPLE_LIST } from "./example-list";
+import { FEATURES } from "./src/feature-list";
 
 export default function App() {
-  const [exampleIndex, setExampleIndex] = useState(null);
+  const [featureIndex, setfeatureIndex] = useState(null);
 
   // Handle when user press Hardware Back Button
   useEffect(() => {
     const backAction = () => {
-      // Go back to Example List
-      if (exampleIndex !== null) {
-        setExampleIndex(null);
+      // Go back to feature List
+      if (featureIndex !== null) {
+        setfeatureIndex(null);
       } 
-      // Exit app if user currently in Example List
+      // Exit app if user currently in feature List
       else {
         BackHandler.exitApp();
       }
@@ -35,9 +35,9 @@ export default function App() {
     );
 
     return () => backHandler.remove();
-  }, [exampleIndex]);
+  }, [featureIndex]);
 
-  if (exampleIndex !== null) return EXAMPLE_LIST[exampleIndex].component;
+  if (featureIndex !== null) return FEATURES[featureIndex].component;
 
   return (
     <SafeAreaView style={styles.container}>
@@ -46,8 +46,8 @@ export default function App() {
       </Text>
 
       <ScrollView>
-        {EXAMPLE_LIST.map((l, i) => (
-          <ListItem key={i} bottomDivider onPress={() => setExampleIndex(i)}>
+        {FEATURES.map((l, i) => (
+          <ListItem key={i} bottomDivider onPress={() => setfeatureIndex(i)}>
             
 
             <ListItem.Content>

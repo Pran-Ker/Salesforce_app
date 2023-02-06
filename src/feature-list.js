@@ -1,10 +1,10 @@
 import React from "react";
 
-import RegisterForm from "./src/register-form/RegisterForm";
+import RegisterForm from "./register-form/RegisterForm";
 // import ProfilePage from "./"
 
 
-export const EXAMPLE_LIST = [
+export const FEATURES = [
   
   {
     name: "Register Form",
