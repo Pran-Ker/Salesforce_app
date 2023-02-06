@@ -1,8 +1,4 @@
-# React Native Expo examples
-
-Learn React Native (Expo SDK 47) by easy-to-difficult examples.
-
-_For more advance examples, see [React Native TypeScript examples](https://github.com/robinhuy/react-native-typescript-examples)_
+# Salesforce Market place User App
 
 ## Run project in development
 
@@ -17,5 +13,7 @@ _For more advance examples, see [React Native TypeScript examples](https://githu
 - Run on both Android & iOS: `yarn mobile` (or `npm run mobile`).
 
 - Run server: `yarn start`. Then use app **Expo Go** on your mobile and scan QR code on the terminal.
+
+- In case the app is not working on Mobile, Run Server: `expo start --tunnel` (for this you will need expo installed).
 
 ## Preview

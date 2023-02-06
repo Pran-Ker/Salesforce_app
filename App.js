@@ -29,7 +29,6 @@ export default function App() {
       return true;
     };
 
-    // https://reactnative.dev/docs/backhandler
     const backHandler = BackHandler.addEventListener(
       "hardwareBackPress",
       backAction
