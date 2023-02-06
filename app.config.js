@@ -1,7 +1,7 @@
 module.exports = {
   expo: {
     name: 'aethereus-app',
-    slug: 'aethereus-app',
+    slug: 'react-native-expo-examples',
     platforms: ['ios', 'android'],
     version: '1.0.0',
     orientation: 'portrait',

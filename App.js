@@ -42,7 +42,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <Text h4 style={styles.heading}>
-        Aethereseus Login Page
+        Aethereus Login Page
       </Text>
 
       <ScrollView>
