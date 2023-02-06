@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, TextInput } from "react-native";
-import { styles } from "../../examples/register-form/styles";
+import { styles } from "../register-form/styles";
 
 export default function FormField({
   field,
