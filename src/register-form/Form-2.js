@@ -206,7 +206,7 @@ export default function RegisterForm() {
                 
 
                 <TouchableOpacity
-                  onPress={() => {this.handleSubmit();}}
+                  onPress={() => {handleSubmit}}
                 >
                   <View
                     style={[

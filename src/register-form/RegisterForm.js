@@ -15,6 +15,9 @@ import { styles } from "./styles";
 import FormField from "./FormField";
 
 
+
+
+
 export default function RegisterForm({navigation}) {
   function onSubmitHandler(values) {
     console.log(values)
