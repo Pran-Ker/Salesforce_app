@@ -16,7 +16,7 @@
     "@react-native-community/slider": "4.2.4",
     "@react-navigation/bottom-tabs": "^6.5.0",
     "@react-navigation/native": "^6.1.0",
-    "@react-navigation/stack": "^6.3.8",
+    "@react-navigation/stack": "^6.3.12",
     "date-fns": "^2.29.3",
     "eas-cli": "^3.5.1",
     "expo": "^47.0.0",

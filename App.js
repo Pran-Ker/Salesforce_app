@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
   },
   icon: {
     position: 'absolute',
-    top: 50,
+    top: 20,
     left: 50,
     zIndex: 999,
     width: 50,
