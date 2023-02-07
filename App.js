@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import { Text, ListItem } from "react-native-elements";
 import Constants from "expo-constants";
-import { FEATURES } from "./src/feature-list";
+import { FEATURES } from "./src/list";
 
 export default function App() {
   const [featureIndex, setfeatureIndex] = useState(null);

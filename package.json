@@ -17,6 +17,7 @@
     "@react-navigation/bottom-tabs": "^6.5.4",
     "@react-navigation/drawer": "^6.5.8",
     "@react-navigation/native": "^6.1.0",
+    "@react-navigation/native-stack": "^6.9.9",
     "@react-navigation/stack": "^6.3.12",
     "date-fns": "^2.29.3",
     "eas-cli": "^3.5.1",

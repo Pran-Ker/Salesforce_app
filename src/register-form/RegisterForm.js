@@ -15,10 +15,18 @@ import { styles } from "./styles";
 import FormField from "./FormField";
 
 
+import { useNavigation } from '@react-navigation/native';
 
 
+export default function RegisterForm() {
 
-export default function RegisterForm({navigation}) {
+  const navigation = useNavigation();
+    
+const handleSubmit = () => {
+  navigation.navigate('Form'); //Pass object check second page
+}
+
+
   function onSubmitHandler(values) {
     console.log(values)
     // https://reactnative.dev/docs/alert
@@ -74,7 +82,6 @@ export default function RegisterForm({navigation}) {
             {({
               handleChange,
               handleBlur,
-              handleSubmit,
               values,
               errors,
               touched,
@@ -126,7 +133,7 @@ export default function RegisterForm({navigation}) {
                 
 
                 <TouchableOpacity
-                  onPress={() => navigation.navigate('Form-2')}  //handleSubmit
+                  onPress={handleSubmit}  //handleSubmit // * can pass an object through this
                 >
                   <View
                     style={[
