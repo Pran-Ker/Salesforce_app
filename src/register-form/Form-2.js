@@ -8,7 +8,6 @@ import {
   Alert,
 } from "react-native";
 import { useState } from 'react';
-// import Display from './Display';
 import { useNavigation } from '@react-navigation/native';
 
 import { styles } from "./styles";
@@ -39,17 +38,22 @@ const navigation = useNavigation();
 const isDisabled = !cgpa10 || !cgpa12 || !cgpaGrad;
 const handleSubmit = () => {
   if (cgpa10 >=0 && cgpa10 <=10 && cgpa12 >=0 && cgpa12 <=10 && cgpaGrad >=0 && cgpaGrad <=10) {
-  navigation.navigate('Display', {
-  data: dataObject
-  });
+  navigation.navigate('Display'); //, {    data: dataObject    }
   } else {
   Alert.alert("Invalid input", "Enter a value between 0 and 10.");
   }
   };
 
 return (
-<View style={styles.container}>
-<Text style={styles.headerText}>Enter your CGPA details:</Text>
+  <>
+  <SafeAreaView style={styles.topSafeArea} />
+    
+      
+      <SafeAreaView style={styles.container}>
+        <View style={styles.header}>
+          <Text style={styles.headerText}>Register</Text>
+        </View>
+        <Text style={styles.headerText}>Enter your CGPA details:</Text>
 <Text style={styles.label}>10th CGPA:</Text>
 <View style={styles.inputContainer}>
 <TextInput
@@ -84,7 +88,8 @@ return (
       >
         <Text style={styles.buttonText}>Submit</Text>
       </TouchableOpacity>
-</View>
+ </SafeAreaView>
+ </>
 )
 }
 

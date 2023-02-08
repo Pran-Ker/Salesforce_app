@@ -19,6 +19,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import RegisterForm from "./src/register-form/RegisterForm";
 import Form from "./src/register-form/Form-2";
+import Display from "./src/register-form/Display";
 
 // import ProfilePage from "./profile-page"
 
@@ -36,6 +37,7 @@ export default function App() {
             <Stack.Navigator>
             <Stack.Screen name="RegisterForm" component={RegisterForm} />
             <Stack.Screen name="Form" component={Form} />
+            <Stack.Screen name="Display" component={Display} />
             </Stack.Navigator>
         </NavigationContainer>
         </SafeAreaView>

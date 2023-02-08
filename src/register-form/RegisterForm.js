@@ -16,6 +16,7 @@ import FormField from "./FormField";
 
 
 import { useNavigation } from '@react-navigation/native';
+import { isValid } from "date-fns";
 
 
 export default function RegisterForm() {
@@ -23,7 +24,16 @@ export default function RegisterForm() {
   const navigation = useNavigation();
     
 const handleSubmit = () => {
-  navigation.navigate('Form'); //Pass object check second page
+  // console.log(values)
+  if(true) { 
+    navigation.navigate('Form');
+  } //, {    data: values  }
+  else{
+    Alert.alert(
+      "Fill"
+      
+    ); 
+  }
 }
 
 
@@ -99,7 +109,7 @@ const handleSubmit = () => {
                   handleBlur={handleBlur}
                 />
 
-                <FormField
+                {/* <FormField
                   field="lastName"
                   label="Last Name"
                   autoCapitalize="words"
@@ -128,7 +138,7 @@ const handleSubmit = () => {
                   errors={errors}
                   handleChange={handleChange}
                   handleBlur={handleBlur}
-                />
+                /> */}
 
                 
 
