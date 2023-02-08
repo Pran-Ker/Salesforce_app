@@ -6,60 +6,43 @@ import {
   View,
   BackHandler,
   Image,
+  Text
 } from "react-native";
-import { Text, ListItem } from "react-native-elements";
+
+
+
 import Constants from "expo-constants";
-import { FEATURES } from "./src/list";
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+
+
+import RegisterForm from "./src/register-form/RegisterForm";
+import Form from "./src/register-form/Form-2";
+
+// import ProfilePage from "./profile-page"
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
-  const [featureIndex, setfeatureIndex] = useState(null);
 
-  // Handle when user press Hardware Back Button
-  useEffect(() => {
-    const backAction = () => {
-      // Go back to feature List
-      if (featureIndex !== null) {
-        setfeatureIndex(null);
-      } 
-      // Exit app if user currently in feature List
-      else {
-        BackHandler.exitApp();
-      }
-
-      return true;
-    };
-
-    const backHandler = BackHandler.addEventListener(
-      "hardwareBackPress",
-      backAction
-    );
-
-    return () => backHandler.remove();
-  }, [featureIndex]);
-
-  if (featureIndex !== null) return FEATURES[featureIndex].component;
-
-  return (
-    <SafeAreaView style={styles.container}>
+    return (
+      <SafeAreaView style={styles.container}>
       <Image source={require('./assets/icon.png')} style={styles.icon} />
       <Text h4 style={styles.heading}>
         Aethereus
       </Text>
-
-      <ScrollView>
-        {FEATURES.map((l, i) => (
-          <ListItem key={i} bottomDivider onPress={() => setfeatureIndex(i)}>
-            
-
-            <ListItem.Content>
-              <ListItem.Title style={styles.title}>{l.name}</ListItem.Title>
-            </ListItem.Content>
-          </ListItem>
-        ))}
-      </ScrollView>
-    </SafeAreaView>
-  );
+        <NavigationContainer>
+            <Stack.Navigator>
+            <Stack.Screen name="RegisterForm" component={RegisterForm} />
+            <Stack.Screen name="Form" component={Form} />
+            </Stack.Navigator>
+        </NavigationContainer>
+        </SafeAreaView>
+    );
 }
+
+
 
 const styles = StyleSheet.create({
   container: {
@@ -75,10 +58,27 @@ const styles = StyleSheet.create({
   },
   icon: {
     position: 'absolute',
-    top: 20,
+    top: 30,
     left: 50,
     zIndex: 999,
     width: 50,
     height: 50,
   },
 });
+
+
+// export const FEATURES = [
+  
+//   {
+//     name: "Register Form",
+//     component: <RegisterForm />,
+//   },
+//   // {
+//   //   name: "Profile",
+//   //   component: <ProfilePage/>,
+//   // }
+// ];
+
+
+
+
