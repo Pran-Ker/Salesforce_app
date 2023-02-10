@@ -46,16 +46,6 @@ const handleSubmit = () => {
     );
   }
 
-  // const handleSubmit = () => {
-  //   if (cgpa10 >=0 && cgpa10 <=10 && cgpa12 >=0 && cgpa12 <=10 && cgpaGrad >=0 && cgpaGrad <=10) {
-  //   navigation.navigate('Display', {
-  //   data: dataObject
-  //   });
-  //   } else {
-  //   Alert.alert("Invalid input", "Enter a value between 0 and 10.");
-  //   }
-  //   };
-
   function isFormValid(isValid, touched) {
     return isValid && Object.keys(touched).length !== 0;
   }

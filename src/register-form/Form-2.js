@@ -9,6 +9,7 @@ import {
 } from "react-native";
 import { useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
+import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 
 import { styles } from "./styles";
 
@@ -51,18 +52,25 @@ return (
       
       <SafeAreaView style={styles.container}>
         <View style={styles.header}>
-          <Text style={styles.headerText}>Register</Text>
+          <Text style={styles.headerText}>Details</Text>
         </View>
-        <Text style={styles.headerText}>Enter your CGPA details:</Text>
+        
+<KeyboardAwareScrollView
+          style={styles.content}
+          showsVerticalScrollIndicator={false}
+          keyboardShouldPersistTaps="handled"
+          extraScrollHeight={150}
+        >
+<Text style={styles.headerText}>Enter your CGPA details:</Text>
+
 <Text style={styles.label}>10th CGPA:</Text>
-<View style={styles.inputContainer}>
 <TextInput
        style={styles.input}
        value={cgpa10}
        onChangeText={setCgpa10}
        keyboardType="decimal-pad"
      />
-</View>
+
 <Text style={styles.label}>12th CGPA:</Text>
 <View style={styles.inputContainer}>
 <TextInput
@@ -88,6 +96,7 @@ return (
       >
         <Text style={styles.buttonText}>Submit</Text>
       </TouchableOpacity>
+      </KeyboardAwareScrollView>
  </SafeAreaView>
  </>
 )
