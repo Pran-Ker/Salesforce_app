@@ -28,7 +28,7 @@ const BasketButton = ({isWhite, style, navigation}) => (
     <Icon
       family="ArgonExtra"
       size={16}
-      name="basket"
+      name="calendar-date"
       color={argonTheme.COLORS[isWhite ? 'WHITE' : 'ICON']}
     />
   </TouchableOpacity>
@@ -126,13 +126,13 @@ class Header extends React.Component {
       <Block row style={styles.options}>
         <Button shadowless style={[styles.tab, styles.divider]} onPress={() => navigation.navigate('Ele')}>
           <Block row middle>
-            <Icon name="diamond" family="ArgonExtra" style={{ paddingRight: 8 }} color={argonTheme.COLORS.ICON} />
+            <Icon name="spaceship" family="ArgonExtra" style={{ paddingRight: 8 }} color={argonTheme.COLORS.ICON} />
             <Text size={16} style={styles.tabTitle}>{optionLeft || 'Sales'}</Text>
           </Block>
         </Button>
         <Button shadowless style={styles.tab} onPress={() => navigation.navigate('Ele')}>
           <Block row middle>
-            <Icon size={16} name="bag-17" family="ArgonExtra" style={{ paddingRight: 8 }} color={argonTheme.COLORS.ICON}/>
+            <Icon size={16} name="chart-pie-35" family="ArgonExtra" style={{ paddingRight: 8 }} color={argonTheme.COLORS.ICON}/>
             <Text size={16} style={styles.tabTitle}>{optionRight || 'Manage'}</Text>
           </Block>
         </Button>
@@ -187,6 +187,7 @@ class Header extends React.Component {
           transparent={transparent}
           right={this.renderRight()}
           rightStyle={{ alignItems: 'center' }}
+          bgColor={argonTheme.COLORS.ACTIVE}
           left={
             <Icon 
               name={back ? 'chevron-left' : "menu"} family="entypo" 

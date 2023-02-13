@@ -7,7 +7,7 @@ import Articles from "../screens/Articles";
 import { Block } from "galio-framework";
 // drawer
 import CustomDrawerContent from "./Menu";
-import Elements from "../screens/Elements";
+import Events from "../screens/Events";
 // screens
 import Home from "../screens/Home";
 import Profile from "../screens/Profile";
@@ -23,7 +23,7 @@ const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 const Tab = createBottomTabNavigator();
 
-function ElementsStack(props) {
+function EventsStack(props) {
   return (
     <Stack.Navigator
       screenOptions={{
@@ -32,11 +32,11 @@ function ElementsStack(props) {
       }}
     >
       <Stack.Screen
-        name="Elements"
-        component={Elements}
+        name="Events"
+        component={Events}
         options={{
           header: ({ navigation, scene }) => (
-            <Header title="Elements" navigation={navigation} scene={scene} />
+            <Header title="Events" navigation={navigation} scene={scene} />
           ),
           cardStyle: { backgroundColor: "#F8F9FE" },
         }}
@@ -196,8 +196,8 @@ function AppStack(props) {
         }}
       />
       <Drawer.Screen
-        name="Elements"
-        component={ElementsStack}
+        name="Events"
+        component={EventsStack}
         options={{
           headerShown: false,
         }}
