@@ -10,7 +10,6 @@ import CustomDrawerContent from "./Menu";
 import Elements from "../screens/Elements";
 // screens
 import Home from "../screens/Home";
-import Onboarding from "../screens/Onboarding";
 import Profile from "../screens/Profile";
 import React from "react";
 import Register from "../screens/Register";
@@ -42,6 +41,7 @@ function ElementsStack(props) {
           cardStyle: { backgroundColor: "#F8F9FE" },
         }}
       />
+      
     </Stack.Navigator>
   );
 }
@@ -137,13 +137,7 @@ export default function OnboardingStack(props) {
         headerShown: false,
       }}
     >
-      <Stack.Screen
-        name="Onboarding"
-        component={Onboarding}
-        option={{
-          headerTransparent: true,
-        }}
-      />
+      
       <Stack.Screen name="App" component={AppStack} />
     </Stack.Navigator>
   );

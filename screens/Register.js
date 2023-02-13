@@ -38,7 +38,7 @@ class Register extends React.Component {
                         color={"black"}
                         style={{ marginTop: 2, marginRight: 5 }}
                       />
-                      <Text style={styles.socialTextButtons}>GITHUB</Text>
+                      <Text style={styles.socialTextButtons}>Salesforce</Text>
                     </Block>
                   </Button>
                   <Button style={styles.socialButtons}>
