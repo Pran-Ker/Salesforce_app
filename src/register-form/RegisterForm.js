@@ -7,11 +7,9 @@ import {
   TextInput,
   Alert,
 } from "react-native";
-import { StatusBar } from "expo-status-bar";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { Formik } from "formik";
 import { validationSchema } from "./validation";
-import { styles } from "./styles";
 import FormField from "./FormField";
 
 
@@ -52,10 +50,6 @@ const handleSubmit = () => {
 
   return (
     <>
-      <SafeAreaView style={styles.topSafeArea} />
-
-      <StatusBar style="light" />
-
       <SafeAreaView style={styles.container}>
         <View style={styles.header}>
           <Text style={styles.headerText}>Register</Text>

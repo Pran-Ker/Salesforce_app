@@ -170,7 +170,7 @@ class Header extends React.Component {
     const noShadow = ['Search', 'Categories', 'Deals', 'Profile'].includes(title);
     const headerStyles = [
       !noShadow ? styles.shadow : null,
-      transparent ? { backgroundColor: 'rgba(0,0,0,0)' } : null,
+      transparent ? { backgroundColor: 'rgba(0,0,100,0)' } : null,
     ];
 
     const navbarStyles = [
@@ -181,13 +181,15 @@ class Header extends React.Component {
     return (
       <Block style={headerStyles}>
         <NavBar
-          back={false}
+          back={true}
           title={title}
           style={navbarStyles}
-          transparent={transparent}
+          titleColor="white"
+          iconColor="white"
           right={this.renderRight()}
           rightStyle={{ alignItems: 'center' }}
           bgColor={argonTheme.COLORS.ACTIVE}
+          
           left={
             <Icon 
               name={back ? 'chevron-left' : "menu"} family="entypo" 
@@ -224,6 +226,7 @@ const styles = StyleSheet.create({
   navbar: {
     paddingVertical: 0,
     paddingBottom: theme.SIZES.BASE * 1.5,
+    backgroundColor: theme.COLORS.ACTIVE,
     paddingTop: iPhoneX ? theme.SIZES.BASE * 4 : theme.SIZES.BASE,
     zIndex: 5,
   },
@@ -245,7 +248,7 @@ const styles = StyleSheet.create({
     right: 12,
   },
   header: {
-    backgroundColor: theme.COLORS.WHITE,
+    backgroundColor: argonTheme.COLORS.ACTIVE,
   },
   divider: {
     borderRightWidth: 0.3,

@@ -55,7 +55,7 @@ class DrawerItem extends React.Component {
             color={focused ? "white" : argonTheme.COLORS.INFO}
           />
         );
-      case "Contact Us":
+      case "Link":
         return (<Icon
           name="spaceship"
           family="ArgonExtra"
@@ -81,7 +81,7 @@ class DrawerItem extends React.Component {
       <TouchableOpacity
         style={{ height: 60 }}
         onPress={() =>
-          title == "Contact Us"
+          title == "Link"
             ? Linking.openURL(
                 "https://aethereus.com/"
               ).catch(err => console.error("An error occurred", err))
