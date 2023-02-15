@@ -170,7 +170,7 @@ class Header extends React.Component {
     const noShadow = ['Search', 'Categories', 'Deals', 'Profile'].includes(title);
     const headerStyles = [
       !noShadow ? styles.shadow : null,
-      transparent ? { backgroundColor: 'rgba(0,0,100,0)' } : null,
+      transparent ? { backgroundColor: 'rgba(0,100,0,0)' } : null,
     ];
 
     const navbarStyles = [

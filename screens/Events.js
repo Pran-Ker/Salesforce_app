@@ -7,7 +7,7 @@ import {
   StyleSheet,
   TouchableOpacity,
 } from "react-native";
-// Argon themed components
+
 import { argonTheme, tabs } from "../constants";
 
 import React from "react";
@@ -31,13 +31,6 @@ class Elements extends React.Component {
           showsVerticalScrollIndicator={false}
           contentContainerStyle={{ paddingBottom: 30, width }}
         >
-          {/* {this.renderButtons()}
-          {this.renderText()}
-          {this.renderInputs()}
-          {this.renderSocial()}
-          {this.renderSwitches()}
-          {this.renderNavigation()}
-          {this.renderTableCell()} */}
         </ScrollView>
       </Block>
     );
