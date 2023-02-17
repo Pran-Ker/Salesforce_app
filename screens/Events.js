@@ -1,4 +1,9 @@
-// Galio components
+import React, { useState, useEffect } from 'react';
+import { View, FlatList } from 'react-native';
+import { Table, Row } from 'react-native-table-component';
+
+
+
 import { Block, Button as GaButton, Text, theme } from "galio-framework";
 import { Button, Header, Icon, Input, Select, Switch } from "../components";
 import {
@@ -10,20 +15,62 @@ import {
 
 import { argonTheme, tabs } from "../constants";
 
-import React from "react";
 
 const { width } = Dimensions.get("screen");
 
+
+// const EventList = () => {
+//   const [events, setEvents] = useState([]);
+
+//   useEffect(() => {
+//     // Fetch the events from an API or database
+//     // and update the state
+//     const fetchEvents = async () => {
+//       const response = await fetch('https://example.com/api/events');
+//       const data = await response.json();
+//       setEvents(data);
+//     };
+//     fetchEvents();
+//   }, []);
+
+//   const tableHead = ['Date', 'Changes', 'About'];
+
+//   const tableData = events.map((event) => [
+//     event.date,
+//     event.changes,
+//     event.about,
+//   ]);
+
+//   return (
+    // <View style={styles.container}>
+    //   <Table borderStyle={styles.tableBorder}>
+    //     <Row data={tableHead} style={styles.head} textStyle={styles.text} />
+    //     <FlatList
+    //       data={tableData}
+    //       renderItem={({ item }) => (
+    //         <Row data={item} style={styles.row} textStyle={styles.text} />
+    //       )}
+    //       keyExtractor={(item, index) => index.toString()}
+    //     />
+    //   </Table>
+    // </View>
+//   );
+// };
+
+// const styles = StyleSheet.create({
+//   container: { flex: 1, padding: 16, paddingTop: 30 },
+//   head: { height: 40, backgroundColor: '#f1f8ff' },
+//   row: { height: 40 },
+//   text: { margin: 6 },
+//   tableBorder: { borderWidth: 1, borderColor: '#c8e1ff' },
+// });
+
+// export default EventList;
+
+
+
 class Elements extends React.Component {
-  state = {
-    "switch-1": true,
-    "switch-2": false,
-  };
-
-  toggleSwitch = (switchId) =>
-    this.setState({ [switchId]: !this.state[switchId] });
-
-  
+    
   render() {
     return (
       <Block flex center>
@@ -31,6 +78,19 @@ class Elements extends React.Component {
           showsVerticalScrollIndicator={false}
           contentContainerStyle={{ paddingBottom: 30, width }}
         >
+
+    <View style={styles.container}>
+      <Table borderStyle={styles.tableBorder}>
+        {/* <Row data={tableHead} style={styles.head} textStyle={styles.text} />
+        <FlatList
+          data={tableData}
+          renderItem={({ item }) => (
+            <Row data={item} style={styles.row} textStyle={styles.text} />
+          )}
+          keyExtractor={(item, index) => index.toString()}
+        /> */}
+      </Table>
+    </View>
         </ScrollView>
       </Block>
     );

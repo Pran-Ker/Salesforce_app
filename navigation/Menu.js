@@ -43,7 +43,7 @@ function CustomDrawerContent({
           >
             <Block
               style={{
-                borderColor: "rgba(0,0,0,0.2)",
+                borderColor: "rgba(0,0,0,0.4)",
                 width: "100%",
                 borderWidth: StyleSheet.hairlineWidth,
               }}

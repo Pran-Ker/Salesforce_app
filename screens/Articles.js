@@ -20,20 +20,20 @@ const thumbMeasure = (width - 48 - 32) / 3;
 const cardWidth = width - theme.SIZES.BASE * 2;
 const categories = [
   {
-    title: "Music Album",
+    title: "Events",
     description:
-      "Rock music is a genre of popular music. It developed during and after the 1960s in the United Kingdom.",
+      "Project 1",
     image:
-      "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?fit=crop&w=840&q=80",
-    price: "$125",
+      "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?fit=crop&w=840&q=80",
+    price: "$125 K",
   },
   {
     title: "Events",
     description:
-      "Rock music is a genre of popular music. It developed during and after the 1960s in the United Kingdom.",
+      "Project 2",
     image:
-      "https://images.unsplash.com/photo-1543747579-795b9c2c3ada?fit=crop&w=840&q=80",
-    price: "$35",
+      "https://images.unsplash.com/photo-1630121430305-37729a5dcd0b?fit=crop&w=840&q=80",
+    price: "$3.5 Million",
   },
 ];
 
@@ -110,7 +110,7 @@ class Articles extends React.Component {
               >
                 <Block style={styles.categoryTitle}>
                   <Text size={18} bold color={theme.COLORS.WHITE}>
-                    View article
+                    Manage
                   </Text>
                 </Block>
               </ImageBackground>
