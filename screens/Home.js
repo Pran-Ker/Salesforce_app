@@ -13,13 +13,16 @@ class Home extends React.Component {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.articles}>
         <Block flex>
-          <Card item={articles[0]} horizontal  />
+          
           <Block flex row>
             <Card item={articles[1]} style={{ marginRight: theme.SIZES.BASE }} />
             <Card item={articles[2]} />
           </Block>
-          <Card item={articles[3]} horizontal />
-          <Card item={articles[4]} full />
+          <Block flex row>
+          <Card item={articles[3]} style={{ marginRight: theme.SIZES.BASE }} />
+          <Card item={articles[4]}  />
+          </Block>
+          <Card item={articles[0]}/>
         </Block>
       </ScrollView>
     )

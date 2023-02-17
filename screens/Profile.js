@@ -66,32 +66,11 @@ class Profile extends React.Component {
                         color="#525F7F"
                         style={{ marginBottom: 4 }}
                       >
-                        2K
+                        2
                       </Text>
                       <Text size={12} color={argonTheme.COLORS.TEXT}>Orders</Text>
                     </Block>
-                    {/* <Block middle>
-                      <Text
-                        bold
-                        color="#525F7F"
-                        size={18}
-                        style={{ marginBottom: 4 }}
-                      >
-                        10
-                      </Text>
-                      <Text size={12} color={argonTheme.COLORS.TEXT}>Photos</Text>
-                    </Block>
-                    <Block middle>
-                      <Text
-                        bold
-                        color="#525F7F"
-                        size={18}
-                        style={{ marginBottom: 4 }}
-                      >
-                        89
-                      </Text>
-                      <Text size={12} color={argonTheme.COLORS.TEXT}>Comments</Text>
-                    </Block>*/}
+
                   </Block> 
                 </Block>
                 <Block flex>
@@ -137,7 +116,7 @@ class Profile extends React.Component {
                       color="transparent"
                       textStyle={{ color: "#5E72E4", fontSize: 12, marginLeft: 24 }}
                     >
-                      View all
+                      Others
                     </Button>
                   </Block>
                   <Block style={{ paddingBottom: -HeaderHeight * 2 }}>

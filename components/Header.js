@@ -8,6 +8,10 @@ import Input from './Input';
 import Tabs from './Tabs';
 import argonTheme from '../constants/Theme';
 
+
+import Register from "../screens/Register";
+
+
 const { height, width } = Dimensions.get('window');
 const iPhoneX = () => Platform.OS === 'ios' && (height === 812 || width === 812 || height === 896 || width === 896);
 
@@ -114,7 +118,7 @@ class Header extends React.Component {
         style={styles.search}
         placeholder="Search for Event"
         placeholderTextColor={'#8898AA'}
-        onFocus={() => navigation.navigate('Ele')}
+        onFocus={() => navigation.navigate('Register')}
         iconContent={<Icon size={16} color={theme.COLORS.MUTED} name="search-zoom-in" family="ArgonExtra" />}
       />
     );

@@ -83,7 +83,7 @@ class Articles extends React.Component {
     return (
       <Block flex style={styles.group}>
         <Text bold size={16} style={styles.title}>
-          Cards
+          Events
         </Text>
         <Block flex>
           <Block style={{ paddingHorizontal: theme.SIZES.BASE }}>
@@ -149,7 +149,7 @@ class Articles extends React.Component {
         style={[styles.group, { paddingBottom: theme.SIZES.BASE * 5 }]}
       >
         <Text bold size={16} style={styles.title}>
-          Album
+          List
         </Text>
         <Block style={{ marginHorizontal: theme.SIZES.BASE * 2 }}>
           <Block flex right>
@@ -158,7 +158,7 @@ class Articles extends React.Component {
               color={theme.COLORS.PRIMARY}
               onPress={() => navigation.navigate("Home")}
             >
-              View All
+              Explore
             </Text>
           </Block>
           <Block
