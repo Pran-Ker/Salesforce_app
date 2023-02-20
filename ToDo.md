@@ -1,15 +1,13 @@
-Done:
+# TODO List
 
-Front End:
-1. Remade Icon with figma
-2. Updated images with Unsplash
-3. Updated text
+## Front End:
+- [x] Remade Icon with figma
+- [x] Updated images with Unsplash
+- [x] Updated text
 
-[ ]   
-
-Back End:
-1. Heroku account set up and docs for app dev
-2. Change routes for links of the app
-3. Create events in menu
-4. Validation for Registeration
-5. 
+## Back End:
+- [ ] Change routes for links of the app 
+- [ ] Heroku account set up and docs for app dev
+- [x] Create events in menu
+- [ ] Validation for Registeration
+- [ ] Create Salesforce JWT and google JWT
