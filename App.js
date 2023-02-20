@@ -13,8 +13,8 @@ import { NavigationContainer } from "@react-navigation/native";
 import { enableScreens } from "react-native-screens";
 enableScreens();
 
-import Screens from "./navigation/Screens";
-import { Images, articles, argonTheme } from "./constants";
+import Screens from "./src/navigation/Screens";
+import { Images, articles, argonTheme } from "./src/constants";
 
 // cache app images
 const assetImages = [
@@ -40,7 +40,7 @@ function cacheImages(images) {
   export default props => {
     const [isLoadingComplete, setLoading] = useState(false);
     let [fontsLoaded] = useFonts({
-      'ArgonExtra': require('./assets/font/argon.ttf'),
+      'ArgonExtra': require('./src/assets/font/argon.ttf'),
     });
   
     function _loadResourcesAsync() {

@@ -1,4 +1,4 @@
-# Project Name
+# Salesforce App
 
 The project is a mobile application built using Expo, React Native, and Node.js. It allows users to login and view, change, and add events with the Salesforce SDK. The app acts as an intermediary between Aethereus and Salesforce.
 
