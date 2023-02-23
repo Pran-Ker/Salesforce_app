@@ -46,7 +46,7 @@ class Register extends React.Component {
                       <Text style={styles.socialTextButtons}>Salesforce</Text>
                     </Block>
                   </Button>
-                  <Button style={styles.socialButtons}>
+                  {/* <Button style={styles.socialButtons}>
                     <Block row>
                       <Icon
                         name="logo-google"
@@ -153,8 +153,8 @@ class Register extends React.Component {
                         </Text>
                       </Button>
                     </Block>
-                  </KeyboardAvoidingView>
-                </Block>
+                  </KeyboardAvoidingView>*/}
+                </Block> 
               </Block>
             </Block>
           </Block>
