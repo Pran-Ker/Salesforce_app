@@ -6,8 +6,16 @@
 - [x] Updated text
 
 ## Back End:
-- [ ] Change routes for links of the app 
-- [ ] Heroku account set up and docs for app dev
+- [ ] Change route links of the app 
+- [ ] Heroku account for app dev
 - [x] Create events in menu
 - [ ] Validation for Registeration
-- [ ] Create Salesforce JWT and google JWT
+- [ ] Create Salesforce JWT
+
+
+# Others:
+- [x] Salesforce oauth is working on localhost
+    -[ ] Trailblaze passing keys back
+- [x] Profile page changes
+- [x] Unity VR/AR setup
+- [ ] Build this (https://blog.unity.com/manufacturing/embedding-real-time-3d-in-your-digital-marketing-strategy)  
