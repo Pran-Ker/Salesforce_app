@@ -33,12 +33,13 @@ const EventList = () => {
     fetchEvents();
   }, []);
 
-  const tableHead = ['Date', 'Changes', 'About'];
+  const tableHead = ['Subject', 'Start Date', 'End Date', 'Description'];
 
   const tableData = events.map((event) => [
-    event.date,
-    event.changes,
-    event.about,
+    event.Subject,
+    event.StartDateTime,
+    event.EndDateTime,
+    event.Description,
   ]);
 
   return (

@@ -81,7 +81,7 @@ class DrawerItem extends React.Component {
       <TouchableOpacity
         style={{ height: 60 }}
         onPress={() =>
-          title == "Link"
+          title == "Contact Us"
             ? Linking.openURL(
                 "https://aethereus.com/"
               ).catch(err => console.error("An error occurred", err))

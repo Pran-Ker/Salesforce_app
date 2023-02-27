@@ -2,6 +2,10 @@
 
 This project has the following file structure:
 
+- navigation/
+    - Contains the logic for the routes to the different screens of the app.
+- screens/
+    - Contains the visual display of the app screens in React Native.
 - assets/
     - Contains all the images, fonts, and icons used in the app.
 - components/
@@ -10,10 +14,6 @@ This project has the following file structure:
     - Includes hardcoded information for the app like the articles.
 - lib/
     - Contains backend components for the app, like `JWT.js` and `SalesforceEventManager`.
-- navigation/
-    - Contains the logic for the routes to the different screens of the app.
-- screens/
-    - Contains the visual display of the app screens in React Native.
 
 ## Assets
 
