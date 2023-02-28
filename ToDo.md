@@ -14,7 +14,7 @@
 
 
 # Others:
-- [x] Salesforce oauth is working on localhost
+- [ x] Salesforce oauth is working on localhost<br>
     -[ ] Trailblaze passing keys back
 - [x] Profile page changes
 - [x] Unity VR/AR setup

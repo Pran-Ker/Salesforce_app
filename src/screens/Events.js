@@ -10,6 +10,7 @@ import {
   Dimensions,
   ScrollView,
   StyleSheet,
+  ImageBackground,
   TouchableOpacity,
 } from "react-native";
 
@@ -26,7 +27,7 @@ const EventList = () => {
     // Fetch the events from an API or database
     // and update the state
     const fetchEvents = async () => {
-      const response = await fetch('https://example.com/api/events');
+      const response = await fetch('');
       const data = await response.json();
       setEvents(data);
     };
@@ -43,6 +44,11 @@ const EventList = () => {
   ]);
 
   return (
+    <ImageBackground
+            source={Images.ProfileBackground}
+            style={styles.profileContainer}
+            imageStyle={styles.profileBackground}
+          >
     <View style={styles.container}>
       <Table borderStyle={styles.tableBorder}>
         <Row data={tableHead} style={styles.head} textStyle={styles.text} />
@@ -55,6 +61,7 @@ const EventList = () => {
         />
       </Table>
     </View>
+    </ImageBackground>
   );
 };
 

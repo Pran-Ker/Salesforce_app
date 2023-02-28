@@ -14,6 +14,18 @@ To get started with the project, follow these steps:
 
 ## Preview
 
+### Home:
+![Alt text](/screenshots/Home.png?raw=true "Home")
+
+### Menu:
+![Alt text](/screenshots/Menu.png?raw=true "Menu")
+
+### Profile:
+![Alt text](/screenshots/Profile.png?raw=true "Profile")
+
+### Signin:
+![Alt text](/screenshots/Signin.png?raw=true "Signin")
+
 
 ## Features
 

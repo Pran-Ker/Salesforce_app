@@ -64,7 +64,6 @@ function ArticlesStack(props) {
           cardStyle: { backgroundColor: "#F8F9FE" },
         }}
       />
-      
     </Stack.Navigator>
   );
 }
