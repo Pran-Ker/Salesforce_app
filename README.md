@@ -1,4 +1,7 @@
 # Salesforce App
+[![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg)]()
+[![GitHub license](https://img.shields.io/github/license/Pran-Ker/Saleforces_app.svg)]()
+
 
 The project is a mobile application built using Expo, React Native, and Node.js. It allows users to login and view, change, and add events with the Salesforce SDK. The app acts as an intermediary between Aethereus and Salesforce.
 
@@ -49,7 +52,3 @@ Here are some possible future additions that could be made to the app:
 The following people have contributed to the development of the project:
 
 - [Prannay Hebbar](https://github.com/Pran-Ker)
-
-## License
-
-The project is licensed under the [MIT License](https://opensource.org/licenses/MIT). See the `LICENSE` file for more details.
