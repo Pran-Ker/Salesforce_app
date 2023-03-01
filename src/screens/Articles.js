@@ -26,15 +26,7 @@ const categories = [
     image:
       "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?fit=crop&w=840&q=80",
     price: "$125 K",
-  },
-  {
-    title: "Events",
-    description:
-      "Project 2",
-    image:
-      "https://images.unsplash.com/photo-1630121430305-37729a5dcd0b?fit=crop&w=840&q=80",
-    price: "$3.5 Million",
-  },
+  }
 ];
 
 class Articles extends React.Component {

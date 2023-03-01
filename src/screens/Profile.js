@@ -66,7 +66,7 @@ class Profile extends React.Component {
                         color="#525F7F"
                         style={{ marginBottom: 4 }}
                       >
-                        2
+                        7
                       </Text>
                       <Text size={12} color={argonTheme.COLORS.TEXT}>Orders</Text>
                     </Block>
@@ -104,18 +104,16 @@ class Profile extends React.Component {
                       Show more
                     </Button>
                   </Block>
-                  <Block
+                  {/* <Block
                     row
-                    space="between"
-                  >
+                    space="between">
                     <Text bold size={16} color="#525F7F" style={{marginTop: 12}}>
                       Projects
                     </Text>
                     <Button
                       small
                       color="transparent"
-                      textStyle={{ color: "#5E72E4", fontSize: 12, marginLeft: 24 }}
-                    >
+                      textStyle={{ color: "#5E72E4", fontSize: 12, marginLeft: 24 }}>
                       Others
                     </Button>
                   </Block>
@@ -126,11 +124,10 @@ class Profile extends React.Component {
                           source={{ uri: img }}
                           key={`viewed-${img}`}
                           resizeMode="cover"
-                          style={styles.thumb}
-                        />
+                          style={styles.thumb}/>
                       ))}
                     </Block>
-                  </Block>
+                  </Block> */}
                 </Block>
               </Block>
             </ScrollView>

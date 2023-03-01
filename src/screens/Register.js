@@ -9,11 +9,6 @@ import {
   KeyboardAvoidingView
 } from "react-native";
 import { Block, Checkbox, Text, theme } from "galio-framework";
-// import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
-// import { Formik } from "formik";
-// import { validationSchema } from "../components/validation";
-// import FormField from "../components/FormField";
-
 
 import { Button, Icon, Input } from "../components";
 import { Images, argonTheme } from "../constants";
