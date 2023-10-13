@@ -24,7 +24,7 @@
     "crypto": "^1.0.1",
     "date-fns": "^2.29.3",
     "eas-cli": "^3.5.1",
-    "expo": "^47.0.13",
+    "expo": "^49.0.13",
     "expo-app-loading": "^2.1.1",
     "expo-av": "~13.0.2",
     "expo-barcode-scanner": "~12.1.0",
@@ -61,7 +61,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
-    "babel-preset-expo": "~9.2.1"
+    "babel-preset-expo": "~9.2.2"
   },
   "private": true
 }
